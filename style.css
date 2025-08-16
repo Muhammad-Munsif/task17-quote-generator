@@ -1,124 +1,124 @@
 /* Base Styles */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
-    --text-color: #333;
-    --bg-color: #f9f9f9;
-    --quote-box-bg: #fff;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+  --quote-box-bg: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    transition: background-color 0.5s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.5s ease;
 }
 
 .container {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .quote-box {
-    background-color: var(--quote-box-bg);
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 10px 20px var(--shadow-color);
-    transition: all 0.5s ease;
+  background-color: var(--quote-box-bg);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 20px var(--shadow-color);
+  transition: all 0.5s ease;
 }
 
 .quote-text {
-    font-size: 1.75rem;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .quote-text i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: var(--primary-color);
 }
 
 .quote-author {
-    font-size: 1.2rem;
-    text-align: right;
-    margin-bottom: 30px;
-    font-style: italic;
-    color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-align: right;
+  margin-bottom: 30px;
+  font-style: italic;
+  color: var(--secondary-color);
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn:hover {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 #tweet-quote {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .quote-text {
-        font-size: 1.5rem;
-    }
-    
-    .quote-author {
-        font-size: 1.1rem;
-    }
-    
-    .btn {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
+  .quote-text {
+    font-size: 1.5rem;
+  }
+
+  .quote-author {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .quote-box {
-        padding: 20px;
-    }
-    
-    .quote-text {
-        font-size: 1.3rem;
-    }
-    
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .btn {
-        width: 100%;
-        justify-content: center;
-    }
+  .quote-box {
+    padding: 20px;
+  }
+
+  .quote-text {
+    font-size: 1.3rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
